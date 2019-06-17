@@ -4,14 +4,25 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MovieStore.Service;
 using MovieStore.WEB.Models;
 
 namespace MovieStore.WEB.Controllers
 {
     public class HomeController : Controller
     {
+        AppUserService appUserService;
+        MovieService movieService;
+        CategoryService categoryService;
+        public HomeController()
+        {
+            categoryService = new CategoryService();
+            appUserService = new AppUserService();
+            movieService = new MovieService();
+        }
         public IActionResult Index()
         {
+
             return View();
         }
 
