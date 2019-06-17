@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MovieStore.Core\MovieStore.Core.csproj" />
+    <ProjectReference Include="..\MovieStore.Data\MovieStore.Data.csproj" />
+    <ProjectReference Include="..\MovieStore.Entity\MovieStore.Entity.csproj" />
+  </ItemGroup>
+
 </Project>
