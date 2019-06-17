@@ -10,7 +10,7 @@ using System.Text;
 
 namespace MovieStore.Service.ServiceBase
 {
-    public class ServiceBase<T> : ICoreService<T> where T : BaseEntity
+    public class BaseService<T> : ICoreService<T> where T : BaseEntity
     {
         //Singeton Pattern Örneği Mulataka araştırın
         private static ProjectContext _context;
